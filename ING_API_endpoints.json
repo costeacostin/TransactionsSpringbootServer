@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "303c5b8f-aad3-4e46-951b-4a006bdba54a",
+		"name": "Clark",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clark-Auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"username\":\"costin\",\n\t\"email\":\"cocostin@coco.com\",\n\t\"roles\":[\"mod\"],\n\t\"password\":\"coco123\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				},
+				"description": "clark auth"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/auth/signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"costin\",\n\t\"password\":\"coco123\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/test/mod",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Frontend-Clark eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjb3N0aW4iLCJpYXQiOjE1ODM3ODI1ODIsImV4cCI6MTU4Mzg2ODk4Mn0.CAws4hapAwZhJlHeKKTHDt3fxEO_iKwoyaFjH6Pxhnjh58rXLfAIaLrdLJ2C5HYis8JCmq1rNnlD-DclBRyLFg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/test/mod",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"mod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"username\":\"costin\",\n\t\"email\":\"cocostin@coco.com\",\n\t\"roles\":[\"mod\"],\n\t\"password\":\"coco123\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
