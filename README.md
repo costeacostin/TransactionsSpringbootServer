@@ -71,10 +71,8 @@ eg body content:
 ```
 
 ## TODO:
-ADD International currency,
- Implement docker build pipeline
-, Comment code
-, Write some tests for API.
+ADD International currency, Implement docker build pipeline, Comment code, Write some tests for API.
+
 
 ## Contributing
 Thanks https://github.com/bezkoder/spring-boot-security-jwt-auth-mongodb. 
